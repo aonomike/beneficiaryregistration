@@ -6,8 +6,8 @@ from django.views.generic import ListView
 
 class OfficeListView(ListView):
     model = Office
-    template_name = 'office/home.html'
+    template_name = 'office/index.html'
     context_object_name = 'offices'
-    paginate_by = 10
+    paginate_by = 1
 
 
