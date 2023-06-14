@@ -1,3 +1,4 @@
+import uuid
 from django.db import models
 from django.db import models
 from django.contrib.auth.models import User
@@ -9,6 +10,7 @@ class Location(models.Model):
     Location object represents a geographical location
     """
     name = models.CharField(max_length=200, help_text="Name")
+    uuid = models.UUIDField(default=uuid.uuid4, editable=False)
     creation_date = models.DateTimeField(null=False, blank=False, default=timezone.now)
     created_by = models.ForeignKey(User, on_delete=models.CASCADE, related_name='location_created_by')
     last_modified_date = models.DateTimeField(null=False, blank=False, default=timezone.now)
@@ -22,9 +24,10 @@ class Location(models.Model):
         return self.name
     
 class Household(models.Model):
-    """Household Model"""
+    """Household refers to a group of people who supposedly live in one house"""
 
     office = models.ForeignKey(Office, on_delete=models.CASCADE)
+    uuid = models.UUIDField(default=uuid.uuid4, editable=False)
     name = models.CharField(max_length=200, help_text="Household Name")
     location = models.ForeignKey(Location, on_delete=models.CASCADE)
     creation_date = models.DateTimeField(null=False, blank=False, default=timezone.now)
@@ -41,8 +44,8 @@ class Household(models.Model):
 
 
 class Person(models.Model):
-    """Person Model"""
-
+    """A Person is a member of a Household"""
+    uuid = models.UUIDField(default=uuid.uuid4, editable=False)
     household = models.ForeignKey(Household, on_delete=models.CASCADE)
     first_name = models.CharField(max_length=200, help_text="First Name")
     last_name = models.CharField(max_length=200, help_text="Last Name")
