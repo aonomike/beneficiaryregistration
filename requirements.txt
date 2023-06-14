@@ -1,0 +1,11 @@
+asgiref==3.7.2
+beautifulsoup4==4.12.2
+Django==4.2.2
+django-bootstrap-v5==1.0.11
+Faker==18.10.1
+kenya-counties==0.0.3
+python-dateutil==2.8.2
+six==1.16.0
+soupsieve==2.4.1
+sqlparse==0.4.4
+typing_extensions==4.6.3

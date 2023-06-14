@@ -33,9 +33,7 @@ class Command(BaseCommand):
             enrolments = Enrolment.objects.all()
 
             for enrolment in enrolments:
-                recipient = Person.objects.filter(
-                    household=enrolment.household, is_recipient=True
-                ).first()
+                recipient = Person.objects.filter(household=enrolment.household, is_recipient=True).first()
 
                 row = [
                     enrolment.id,
