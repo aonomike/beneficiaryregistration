@@ -41,6 +41,7 @@ INSTALLED_APPS = [
     'office',
     'household',
     'enrolment',
+    'custom_commands',
 ]
 
 MIDDLEWARE = [
