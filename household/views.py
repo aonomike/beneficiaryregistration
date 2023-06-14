@@ -16,8 +16,8 @@ class PersonListView(ListView):
     context_object_name = 'persons'
     paginate_by = 20
     
-# class LocationListView(ListView):
-#     model = Location
-#     template_name = 'location/location.html'
-#     context_object_name = 'locations'
-#     paginate_by = 20
+class LocationListView(ListView):
+    model = Location
+    template_name = 'locations/index.html'
+    context_object_name = 'locations'
+    paginate_by = 20
