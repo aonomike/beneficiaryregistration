@@ -27,5 +27,7 @@
 
 9. To access the Location list view follow the url localhost:8000/locations/
 
-7. To log in to admin use the username: `admin` password: `admin@123`
+10. To log in to admin use the username: `admin` password: `admin@123`
+
+11. The CSV extract is called `enrolment.csv` and can be found on the root folder of the project q
 
