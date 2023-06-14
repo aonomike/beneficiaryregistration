@@ -1,7 +1,7 @@
 {
     "_meta": {
         "hash": {
-            "sha256": "8824013f265697d45fbf044f364f0da6064156645695bb1ef477e1a22c75c9e6"
+            "sha256": "788e8bc49f981df9f03343cec9677bd9d8f771fc3d4eb48c088f4cd6a46eaf0f"
         },
         "pipfile-spec": 6,
         "requires": {
@@ -24,6 +24,14 @@
             "markers": "python_version >= '3.7'",
             "version": "==3.7.2"
         },
+        "beautifulsoup4": {
+            "hashes": [
+                "sha256:492bbc69dca35d12daac71c4db1bfff0c876c00ef4a2ffacce226d4638eb72da",
+                "sha256:bd2520ca0d9d7d12694a53d44ac482d181b4ec1888909b035a3dbf40d0f57d4a"
+            ],
+            "markers": "python_full_version >= '3.6.0'",
+            "version": "==4.12.2"
+        },
         "django": {
             "hashes": [
                 "sha256:2a6b6fbff5b59dd07bef10bcb019bee2ea97a30b2a656d51346596724324badf",
@@ -32,6 +40,14 @@
             "index": "pypi",
             "version": "==4.2.2"
         },
+        "django-bootstrap-v5": {
+            "hashes": [
+                "sha256:2d431308859ce3cab7729bb09c76039059cd5fbdd34484da82c4c7f8d49da3a2",
+                "sha256:a207aa804938164c8450bbbef4faaba6d2093b3236000557a50f3bd44b53d268"
+            ],
+            "index": "pypi",
+            "version": "==1.0.11"
+        },
         "kenya-counties": {
             "hashes": [
                 "sha256:6647a4727ec4d802234cbf84830de47ee372d28255e348e97c3f23c832386214",
@@ -39,6 +55,14 @@
             ],
             "index": "pypi",
             "version": "==0.0.3"
+        },
+        "soupsieve": {
+            "hashes": [
+                "sha256:1c1bfee6819544a3447586c889157365a27e10d88cde3ad3da0cf0ddf646feb8",
+                "sha256:89d12b2d5dfcd2c9e8c22326da9d9aa9cb3dfab0a83a024f05704076ee8d35ea"
+            ],
+            "markers": "python_version >= '3.7'",
+            "version": "==2.4.1"
         },
         "sqlparse": {
             "hashes": [
